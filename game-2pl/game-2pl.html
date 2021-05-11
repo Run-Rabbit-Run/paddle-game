@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <title>Game for 2 players</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="options">
+      <label class="options__label" for="color">
+        Color: 
+        <select class="options__select" name="color" id="color">
+          <option value="#dc3545">red</option>
+          <option value="#48ff54">green</option>
+          <option value="#fffc03">yellow</option>
+          <option value="#2d2bff" selected>blue</option>
+          <option value="random">random</option>
+        </select>
+      </label>
+
+      <label class="options__label" for="ball-speed">
+        Ball Speed: 
+        <select class="options__select" name="ball-speed" id="ball-speed">
+          <option value="3">1</option>
+          <option value="4">2</option>
+          <option value="6" selected>3</option>
+          <option value="8">4</option>
+          <option value="10">5</option>
+          <option value="12">6</option>
+          <option value="15">7</option>
+        </select>
+      </label>
+
+      <label class="options__label" for="paddle-speed">
+        Paddle Speed: 
+        <select class="options__select" name="paddle-speed" id="paddle-speed">
+          <option value="8" selected>1</option>
+          <option value="10">2</option>
+          <option value="15">3</option>
+          <option value="20">4</option>
+          <option value="25">5</option>
+          <option value="30">6</option>
+          <option value="35">7</option>
+        </select>
+      </label>
+
+      <button class="play-button" id="play">Play</button>
+    </div>
+
+    <ul class="menu menu--g">
+      <li class="menu__item menu__item--g">
+        <a class="menu__link menu__link--g" href="../game-1pl/game-1pl.html">Одиночная игра</a>
+      </li>
+      <li class="menu__item menu__item--g">
+        <a class="menu__link menu__link--g active" href="#">Два игрока</a>
+      </li>
+    </ul>
+  </div>
+
+  <canvas id="myCanvas"></canvas>
+
+  <script src="./game-2pl.js"></script>
+</body>
+</html>

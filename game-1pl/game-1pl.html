@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <title>Game for 1 player</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="options">
+      <label class="options__label" for="color">
+        Color: 
+        <select class="options__select" name="color" id="color">
+          <option value="#dc3545">red</option>
+          <option value="#48ff54">green</option>
+          <option value="#fffc03">yellow</option>
+          <option value="#2d2bff" selected>blue</option>
+          <option value="random">random</option>
+        </select>
+      </label>
+
+      <label class="options__label" for="speed">
+        Ball Speed: 
+        <select class="options__select" name="speed" id="speed">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </label>
+
+      <button class="play-button" id="play">Play</button>
+    </div>
+
+    <ul class="menu menu--g">
+      <li class="menu__item menu__item--g">
+        <a class="menu__link menu__link--g active" href="#">Одиночная игра</a>
+      </li>
+      <li class="menu__item menu__item--g">
+        <a class="menu__link menu__link--g" href="../game-2pl/game-2pl.html">Два игрока</a>
+      </li>
+    </ul>
+  </div>
+
+  <canvas id="canvas1" width="480" height="320"></canvas>
+
+  <script src="./game-1pl.js"></script>
+</body>
+</html>
