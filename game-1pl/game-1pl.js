@@ -23,7 +23,7 @@ const ballRadius = 10;
 let score = 0;
 let lives = 3;
 let dx = speed;
-let dy = -speed;
+let dy = -speed; // ИЗМЕНИТЬ НАПРАВЛЕНИЕ!!!!!!!!!!!!!!
 
 const randomColor = () => `#${Math.floor(Math.random()*16777215).toString(16)}`;
 let fillColor = (colorSelect.value === 'random') ? randomColor() : colorSelect.value;
@@ -168,7 +168,7 @@ function collisionDetection () {
           b.status = 0;
           score += 1;
           if (score === brickRowCount * brickColumnCount) {
-            alert('ПОЗДРАВЛЯЕМ, ЧЕМПИОН!!! ТЫ ПОБЕДИЛ!!!');
+            alert('Поздравляем! Ты победил!');
             document.location.reload();
           }
         }
